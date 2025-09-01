@@ -56,3 +56,17 @@ class BanpoolSubscription(BaseModel):
     guild_id: int
     guild_name: str
     model_config = ConfigDict(from_attributes=True)
+
+
+class GuildNotificationChannel(BaseModel):
+    id: int
+    guild_id: int
+    channel_id: int
+    model_config = ConfigDict(from_attributes=True)
+
+
+class GuildNotificationRole(BaseModel):
+    id: int
+    guild_id: int
+    role_id: int
+    model_config = ConfigDict(from_attributes=True)
